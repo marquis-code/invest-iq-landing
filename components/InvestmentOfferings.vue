@@ -50,19 +50,41 @@
   
   const projects = ref<Project[]>([
     {
-      id: 1,
-      title: 'Oxalis',
-      location: 'Brooklyn, NY',
-      description: 'A recognized leader in language immersion & early education, opening second school.',
-      image: investment,
-      tags: ['HOUSE', 'FAMILY BUSINESS'],
-      raised: 574920,
-      goal: 1000000,
-      securityType: 'Revenue Sharing Note',
-      investmentMultiple: '1.4x',
-      maturity: '48 Months',
-      minInvestment: 100
-    },
+  id: 1,
+  title: 'Maximum Yield Note',
+  location: 'Grow your portfolio with compound interests!',
+  description: 'The Maximum Yield Note offers you an opportunity to invest a lump sum amount and grow it over a period, earning good returns through compound interests in the process. It typically provides a significantly higher rate of return compared to the average yield of similar low-risk instruments in the fixed-income market.',
+  image: investment, // Ensure `investment` is correctly linked to your image file or asset
+  tags: ['COMPOUND INTEREST', 'FIXED-INCOME'], // Updated to 2 tags
+  raised: 574920,
+  goal: 1000000,
+  securityType: 'Revenue Sharing Note',
+  investmentMultiple: '1.4x',
+  maturity: '48 Months', // Corresponds to "A minimum tenor of 2 years"
+  minInvestment: 1000000, // Minimum investment specified as ₦1 million
+  features: {
+    interestRate: 'Up to 26%',
+    returnCapitalisation: 'Capitalised monthly',
+    payoutOptions: ['Monthly', 'Quarterly', 'Bi-Annually'],
+    earlyLiquidationPenalty: 'Forfeiture of entire accrued interest'
+  },
+  investorProfile: 'Any investor who wants to see their investment portfolio grow over time, earning good returns in the process.'
+},
+
+    // {
+    //   id: 1,
+    //   title: 'Maximum Yield Note',
+    //   location: 'Grow your portfolio with compound interests!',
+    //   description: 'A recognized leader in language immersion & early education, opening second school.',
+    //   image: investment,
+    //   tags: ['HOUSE', 'FAMILY BUSINESS'],
+    //   raised: 574920,
+    //   goal: 1000000,
+    //   securityType: 'Revenue Sharing Note',
+    //   investmentMultiple: '1.4x',
+    //   maturity: '48 Months',
+    //   minInvestment: 100
+    // },
     {
       id: 1,
       title: 'Oxalis',

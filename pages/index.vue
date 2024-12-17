@@ -100,7 +100,12 @@
       </div>
     </main>
   </div>
+  <InvestmentCalculator />
+  <WealthBuilder />
   <InvestmentOfferings />
+  <Section1 />
+  <Section2 />
+  <Section3 />
   <InvestmentStats />
   <SavingsCalculator />
   <CapitalRaisingSection />

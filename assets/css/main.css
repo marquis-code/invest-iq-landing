@@ -9,6 +9,11 @@
   background-color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 /* assets/css/main.css */
 .bg-custom {
   background-color: #f0f0f0; /* Light mode background */

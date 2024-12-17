@@ -32,7 +32,7 @@
           <div class="p-6">
             <h3 class="text-xl font-bold mb-1">{{ project.title }}</h3>
             <p class="text-gray-500 text-sm mb-4">{{ project.location }}</p>
-            <p class="text-gray-700 mb-6">{{ project.description }}</p>
+            <p class="text-gray-700 text-sm mb-6">{{ project?.description?.length > 150 ? `${project?.description.slice(0, 150)}..` : project?.description }}</p>
             
             <div class="relative pt-4">
               <div class="h-1 bg-gray-200 rounded-full">
