@@ -109,8 +109,6 @@
   <InvestmentStats />
   <SavingsCalculator />
   <CapitalRaisingSection />
-  <!-- <ServicesSection /> -->
-  <!-- <CustomerTestimonials /> -->
   <FooterSection />
 </main>
 </template>
