@@ -15,12 +15,20 @@ const timeframeOptions = ['Last year', '3 years ago', '5 years ago']
 const sliderPosition = ref(((defaultInvestment - minInvestment) / (maxInvestment - minInvestment)) * 100)
 
 // Format currency for display
+// const formatCurrency = (value: number) => {
+//   return new Intl.NumberFormat('en-NG', {
+//     style: 'decimal',
+//     maximumFractionDigits: 0
+//   }).format(value)
+// }
+
 const formatCurrency = (value: number) => {
   return new Intl.NumberFormat('en-NG', {
-    style: 'decimal',
+    style: 'currency',
+    currency: 'NGN',
     maximumFractionDigits: 0
-  }).format(value)
-}
+  }).format(value);
+};
 
 // Format input value for display
 const formattedInput = computed(() => {
@@ -86,7 +94,8 @@ const calculateReturns = computed(() => {
 <template>
   <div class="max-w-3xl mx-auto p-6 bg-white">
     <h1 class="text-3xl md:text-5xl font-medium text-navy-900 text-center mb-12">
-      Stay the course, reap the rewards
+      You can go to sleep, 
+      but your money shouldn’t.
     </h1>
 
     <div class="space-y-8">
@@ -94,7 +103,7 @@ const calculateReturns = computed(() => {
       <div class="space-y-2">
         <p class="text-gray-600 text-lg text-center">If you invested</p>
         <div class="relative">
-          <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">₦</span>
+          <!-- <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">₦</span> -->
           <input
             type="text"
             :value="formattedInput"
@@ -154,7 +163,7 @@ const calculateReturns = computed(() => {
       <div class="space-y-4">
         <p class="text-gray-600 text-lg text-center">Today, you'd have</p>
         <p class="text-6xl text-center font-medium text-navy-900">
-          ₦{{ formatCurrency(calculateReturns.total) }}
+          {{ formatCurrency(calculateReturns.total) }}
         </p>
         
         <div class="bg-blue-50 p-4 rounded-lg">

@@ -4,12 +4,13 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <!-- Logo & Copyright -->
           <div class="space-y-4">
-            <h2 class="text-[#1F2937] font-semibold text-lg">NEXT INVEST</h2>
-            <p class="text-sm text-[#6B7280]">Copyright © 2020 Logoipsum. All rights reserved.</p>
+            <h2 class="text-[#1F2937] font-semibold text-lg">INVEST IQ
+            </h2>
+            <p class="text-sm text-[#6B7280]">Copyright © 2020 InvestIQ. All rights reserved.</p>
           </div>
   
           <!-- Services Menu -->
-          <div>
+          <!-- <div>
             <h3 class="text-[#1F2937] font-medium mb-4">Services</h3>
             <ul class="space-y-3">
               <li v-for="service in services" :key="service">
@@ -18,7 +19,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
   
           <!-- About Menu -->
           <div>
@@ -71,24 +72,25 @@
   <script setup lang="ts">
   import { defineComponent, h } from 'vue';
   
-  const services = [
-    'Email Marketing',
-    'Campaigns',
-    'Branding',
-    'Offline'
-  ];
+  // const services = [
+  //   'Email Marketing',
+  //   'Campaigns',
+  //   'Branding',
+  //   'Offline'
+  // ];
   
   const aboutItems = [
-    'Our Story',
-    'Benefits',
+    'Company',
     'Team',
-    'Careers'
+    'FAQs',
+    'Terms and Conditions',
+     'Privacy'
   ];
   
   const socialLinks = [
     {
       name: 'Facebook',
-      url: '#',
+      url: ' https://www.facebook.com/loaniqltd?mibextid=ZbWKwL',
       icon: defineComponent({
         render() {
           return h('svg', { viewBox: '0 0 24 24', fill: 'currentColor' }, [
@@ -99,7 +101,7 @@
     },
     {
       name: 'Twitter',
-      url: '#',
+      url: 'https://x.com/loaniqltd?t=vOi55FJRdq_AFb55cy_Tvw&s=09',
       icon: defineComponent({
         render() {
           return h('svg', { viewBox: '0 0 24 24', fill: 'currentColor' }, [
@@ -110,7 +112,7 @@
     },
     {
       name: 'Instagram',
-      url: '#',
+      url: 'https://www.instagram.com/loaniqltd?igsh=MW4zaWZ0M2lnNmFwcQ== ',
       icon: defineComponent({
         render() {
           return h('svg', { viewBox: '0 0 24 24', fill: 'currentColor' }, [

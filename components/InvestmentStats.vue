@@ -35,12 +35,11 @@
             </div>
             
             <h2 data-aos="fade-up"  class="text-4xl font-bold text-gray-900 mb-4">
-              $7M+ paid out to investors
+              NGN 300M+ paid out to investors
             </h2>
             
             <p data-aos="fade-up"  class="text-gray-600 max-w-md">
-              Next Invest has already paid out over $7M in cash returns to investors. 
-              Earn potential cash payments through unique revenue-share and debt financing investments.
+               we have paid out over NGN 300M to our investors in just one year with most of them renvesting their principals and earnings to further grow their wealth.
             </p>
           </div>
   
@@ -61,7 +60,7 @@
             <div class="absolute top-4 right-20 bg-pink-500 text-white text-xs px-2 py-1 rounded">
               Q2 2017
               <br />
-              $5,492,840
+              NGN5,492,840
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
-<!-- components/InvestmentCard.vue -->
-<template>
+ <!-- <template>
     <div 
     data-aos="fade-up" 
       class="group h-[450px] perspective-1000"
@@ -10,7 +9,7 @@
         class="relative h-full transition-transform duration-500 transform-style-preserve-3d"
         :class="{ 'rotate-y-180': isFlipped }"
       >
-        <!-- Front of card -->
+       //Front
         <div class="absolute w-full h-full backface-hidden bg-white rounded-lg shadow-lg overflow-hidden">
           <div class="relative h-48 overflow-hidden">
             <img 
@@ -49,7 +48,7 @@
           </div>
         </div>
   
-        <!-- Back of card -->
+        //Back
         <div class="absolute w-full h-full backface-hidden bg-white rounded-lg shadow-lg overflow-hidden rotate-y-180">
           <div class="pt-6">
             <h3 class="text-xl font-bold mb-1 px-6">{{ project.title }}</h3>
@@ -140,4 +139,88 @@
   .rotate-y-180 {
     transform: rotateY(180deg);
   }
-  </style>
+  </style> -->
+
+<template>
+      <article class="flex flex-col items-start justify-between">
+        <div class="relative w-full">
+          <img
+            src="@/assets/img/invest4.png"
+            alt=""
+            class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+          />
+          <div
+            class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+          ></div>
+        </div>
+        <div class="max-w-xl">
+          <div class="mt-8 flex items-center justify-between gap-x-4 text-sm">
+            <div class="space-y-1">
+              <p>Minimum Investment</p>
+              <time datetime="2020-03-16" class="text-gray-800 font-bold">{{
+                project?.minimumInvestment ?? "Nil"
+              }}</time>
+            </div>
+            <div class="space-y-1">
+              <p>Interest Rate</p>
+              <div class="flex justify-end items-end">
+                <a
+                  href="#"
+                  class="relative font-bold z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-900 hover:bg-gray-100"
+                  >{{ project?.interestRate ?? "Nil" }}</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="group relative">
+            <h3
+              class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600"
+            >
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                {{ project?.title ?? "Nil" }}
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+              {{ project?.description ?? "Nil" }}
+            </p>
+          </div>
+        </div>
+      </article>
+</template>
+
+<script setup lang="ts">
+const props = defineProps<{
+  project: {
+    title: string;
+    description: string;
+    image: string;
+    interestRate: string;
+    minimumInvestment: number;
+  };
+}>();
+
+const isFlipped = ref(false);
+
+const formatNumber = (num: number) => {
+  return num.toLocaleString("en-US");
+};
+</script>
+
+<style scoped>
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+</style>

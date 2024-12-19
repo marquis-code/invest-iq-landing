@@ -8,18 +8,18 @@ interface StepItem {
 const steps: StepItem[] = [
   {
     number: "1",
-    title: "Build your savings",
-    description: "Consistently automate your savings while setting realistic goals."
+    title: "Set your financial goals",
+    description: "Carefully list and priortise your financial goals"
   },
   {
     number: "2",
-    title: "Invest deliberately",
-    description: "Invest in our diverse range of assets that grow in value over time."
+    title: "Invest wisely",
+    description: "Choose th option that works for you from our array of wealth-buhilding investmentts plans."
   },
   {
     number: "3",
-    title: "Stay rich",
-    description: "Protect your wealth by managing risk, seeking advice and making smart financial decisions."
+    title: "Grow your wealth",
+    description: "Monitor your investment and watch it grow exponentially."
   }
 ];
 
@@ -43,13 +43,13 @@ const getMarginClass = (index: number) => {
         <!-- Left Column -->
         <div class="space-y-6">
           <h1 class="text-4xl md:text-6xl font-bold text-navy-900 leading-tight">
-            Get a <span class="italic">little</span> richer<br class="hidden md:block" /> each day
+            Your path to <span class="italic">enduring</span> wealth<br class="hidden md:block" /> starts here with us
           </h1>
           <p class="text-xl md:text-2xl text-navy-900 opacity-90">
-            One small step today, a giant leap for tomorrow.
+            Every step is a stride to a brighter and wealthier future.
           </p>
           <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-            Start Building Wealth
+            Get Started Today
           </button>
         </div>
 

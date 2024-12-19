@@ -4,13 +4,16 @@
         <!-- Left Content -->
         <div class="flex-1 max-w-md">
           <h1 data-aos="fade-up"  class="text-[#1F2937] text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Looking to raise capital for your growing business?
+            Start investing with ease
           </h1>
           <p data-aos="fade-up"  class="text-[#6B7280] text-lg mb-8 leading-relaxed">
-            Whether expanding or opening a brand-new concept, we make it easy to raise money from thousands of local investors.
+            We’re dedicated to transforming your financial 
+aspirations into realities, offering expert 
+solutions with a commitment to trust.
+
           </p>
           <button data-aos="fade-up"  class="bg-[#2F855A] hover:bg-[#276749] text-white px-8 py-3 rounded-md font-medium transition-colors duration-200">
-            APPLY ONLINE
+            Lets Talk
           </button>
         </div>
   

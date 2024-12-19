@@ -9,10 +9,11 @@
         <!-- Header -->
         <div class="text-center mb-12">
           <h2 data-aos="fade-up"  class="text-sky-400 uppercase tracking-wide text-sm font-medium mb-4">
-            Savings Calculator
+            INVESTMENT CALCULATOR
           </h2>
           <h1 data-aos="fade-up"  class="text-slate-800 text-4xl md:text-5xl font-bold leading-tight">
-            Calculate Your Savings with<br />Clear Credit AI
+            Calculate your investment earnings with
+            <br />INTEREST RATES AI
           </h1>
         </div>
   
