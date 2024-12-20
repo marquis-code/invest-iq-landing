@@ -1,5 +1,5 @@
 <template>
-    <section class="min-h-screen bg-[#F8FAFC] flex items-center justify-center p-4 md:p-8">
+    <section class="bg-[#F8FAFC] flex items-center justify-center p-4 md:p-8">
       <div class="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between p-8 md:p-16 gap-8">
         <!-- Left Content -->
         <div class="flex-1 max-w-md">

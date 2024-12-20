@@ -222,7 +222,7 @@ in the fixed-income market.
   </div>
 
   <InvestmentStats />
-  <SavingsCalculator />
+  <!-- <SavingsCalculator /> -->
   <CapitalRaisingSection />
   <FooterSection />
 </main>
